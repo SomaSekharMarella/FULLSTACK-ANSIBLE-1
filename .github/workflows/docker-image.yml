@@ -32,7 +32,7 @@ jobs:
           context: ./TBHBackend
           file: ./TBHBackend/backend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/ansible-1backend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/ansible-1backend:somu
 
       # Step 5 — Build & Push Frontend Image
       - name: Build and Push Frontend Image
@@ -41,4 +41,4 @@ jobs:
           context: ./TBHFrontend
           file: ./TBHFrontend/frontend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/ansible-1frontend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/ansible-1frontend:somu

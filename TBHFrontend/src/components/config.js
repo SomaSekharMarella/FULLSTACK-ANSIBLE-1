@@ -1,5 +1,5 @@
 const config ={
-    url : "http://localhost:8080"
+    url : "http://localhost:30025"
 }
 
 export default config;
